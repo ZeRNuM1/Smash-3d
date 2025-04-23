@@ -1,0 +1,27 @@
+<!-- Intro / Character Selection Screen -->
+<div id="introScreen">
+  <div id="introContent">
+    <h1>Marvel Rivals</h1>
+    <p>Select Your Fighter</p>
+    <div id="charSelectContainer">
+      <button class="charButton" data-character="mario">Mario</button>
+      <button class="charButton" data-character="link">Link</button>
+      <button class="charButton" data-character="kirby">Kirby</button>
+      <button class="charButton" data-character="samus">Samus</button>
+      <button class="charButton" data-character="fox">Fox</button>
+    </div>
+  </div>
+</div>
+
+<!-- Game Controls (hidden until selection is made) -->
+<div id="controls" style="display:none">
+  <button id="generateCodeBtn">Generate My Game Code</button>
+  <input id="codeInput" type="text" placeholder="Paste game code here">
+  <button id="applyCodeBtn">Apply Received Game Code</button>
+  <button id="generateArenaBtn">Generate Arena</button>
+  <p id="generatedCode"></p>
+</div>
+
+<!-- Rendering Canvas -->
+<canvas id="renderCanvas" touch-action="none"></canvas>
+<script src="smash3d.js"></script>
